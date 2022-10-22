@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/My-React-Projects/static/css/main.5587d121.css",
-    "main.js": "/My-React-Projects/static/js/main.63446beb.js",
+    "main.css": "/My-React-Projects/static/css/main.7da470ba.css",
+    "main.js": "/My-React-Projects/static/js/main.b7223ee5.js",
     "static/media/react-logo.png": "/My-React-Projects/static/media/react-logo.a35160f0e95886ce52aa.png",
-    "static/media/logo.svg": "/My-React-Projects/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/linkedin.png": "/My-React-Projects/static/media/linkedin.ff8be19b460643f9d162.png",
     "index.html": "/My-React-Projects/index.html",
-    "main.5587d121.css.map": "/My-React-Projects/static/css/main.5587d121.css.map",
-    "main.63446beb.js.map": "/My-React-Projects/static/js/main.63446beb.js.map"
+    "main.7da470ba.css.map": "/My-React-Projects/static/css/main.7da470ba.css.map",
+    "main.b7223ee5.js.map": "/My-React-Projects/static/js/main.b7223ee5.js.map"
   },
   "entrypoints": [
-    "static/css/main.5587d121.css",
-    "static/js/main.63446beb.js"
+    "static/css/main.7da470ba.css",
+    "static/js/main.b7223ee5.js"
   ]
 }
