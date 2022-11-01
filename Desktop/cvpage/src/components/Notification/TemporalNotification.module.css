@@ -1,0 +1,24 @@
+.notification{
+  position: fixed;
+  top: 4vh;
+  left:45%;
+  background-color: rgb(167, 235, 235);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  color: rgb(19, 168, 168);
+  font-size: 24px;
+  padding: 4px;
+  border:4px rgb(19, 168, 168) double;
+  border-radius: 5px;
+  animation: fade-out 1.7s ease-in 1.8s 1 normal forwards;
+}
+
+@keyframes fade-out{
+  0%{opacity: 100%;}
+  100%{opacity: 0%;}
+}
+
+@media only screen and (max-width: 600px) {
+  .notification{
+    left:40%;
+  }
+}

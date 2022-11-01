@@ -1,0 +1,121 @@
+
+.personalContact{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
+.phoneNationality{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 3px;
+  margin-right: 10px;
+}
+
+.mailMargin{
+  margin-left: 3px;
+  margin-right: 10px;
+}
+
+.divRowCentered{
+  display: flex;
+  align-items: center;
+}
+
+.formMessage{
+  
+}
+
+.noBulletList{
+  list-style-type: none;
+  padding-left: 7px; 
+}
+
+.noBulletList li button{
+  background-color: rgb(65, 212, 212);
+  border: 3px rgb(18, 157, 157) solid;
+  color: rgb(18, 157, 157);
+  font-weight: 900;
+  border-radius: 5%;
+  font-size: 16px;
+  margin-left: 10px;
+  width:20%;
+  transition:border-width ease-in-out 0.2s;
+  cursor: pointer;
+}
+
+.noBulletList li button:hover{
+  border-width: 4px;
+}
+
+.noBulletList li{
+  margin-top:10px;
+}
+
+.noBulletList li input{
+  margin-left: 7px;
+  border-radius: 7%;
+  border: 4px rgb(19, 168, 168) solid;
+  height: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:rgb(19, 168, 168);
+  font-weight: 700;
+  width: 25%;
+}
+
+.noBulletList li textarea{
+  margin-left: 4px;
+  border-radius: 4%;
+  border: 4px rgb(19, 168, 168) solid;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:rgb(19, 168, 168);
+  font-weight: 700;
+  width: 60%;
+  padding: 5px;
+  resize: none;
+}
+
+.noBulletList li textarea::-webkit-scrollbar {
+  padding: 5px;
+  width: 12px;
+  background-color: #F5F5F5; 
+}
+
+.noBulletList li textarea::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgb(19, 168, 168); 
+}
+
+.noBulletList li input::-webkit-input-placeholder,
+.noBulletList li textarea::-webkit-input-placeholder{
+  color:rgb(169, 167, 167);
+}
+
+.noBulletList li input::-moz-placeholder,
+.noBulletList li textarea::-moz-placeholder
+{
+  color:rgb(169, 167, 167);
+}
+
+.noBulletList li input::-ms-placeholder,
+.noBulletList li textarea::-ms-placeholder{
+  color:rgb(169, 167, 167);
+}
+
+.noBulletList li input::placeholder,
+.noBulletList li input::placeholder{
+  color:rgb(169, 167, 167);
+}
+
+.redSpan{
+  color: rgb(216, 53, 53);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+@media only screen and (max-width: 600px) {
+  .noBulletList li input{
+    width: 60%;
+  }
+}
