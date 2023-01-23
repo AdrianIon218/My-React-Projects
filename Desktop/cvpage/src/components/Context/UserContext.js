@@ -12,6 +12,8 @@ export function UserContextProvider(props){
     contactArr:false,
     projectsArr:false,
     educationArr:false,
+    skillsArr:false,
+    jobsArr:false
   }
 
   React.useEffect(()=>{
@@ -24,7 +26,7 @@ export function UserContextProvider(props){
 
   if(userData!==false){
     currentContext.cvData = { name: userData.name, photoProfile: userData.photoProfile,
-      address: userData.address, birthdate: userData.birthdate, jobTitle: userData.jobTitle };
+      address: userData.address, birthdate: userData.birthdate, jobTitle: userData.jobTitle , nationality: userData.nationality, isEuropean: userData.isEuropean };
 
     currentContext.footerData = { name: userData.name, linkedinLink: userData.linkedinLink};
 
@@ -38,6 +40,14 @@ export function UserContextProvider(props){
 
     currentContext.educationArr = Object.keys(userData.education).map(
       (id)=>({...userData.education[id]})
+    );
+
+    currentContext.skillsArr = Object.keys(userData.skills).map(
+      (id)=>({type:id, ...userData.skills[id]})
+    );
+
+    currentContext.jobsArr = Object.keys(userData.jobs).map(
+      (id)=>({...userData.jobs[id]})
     );
   }
 

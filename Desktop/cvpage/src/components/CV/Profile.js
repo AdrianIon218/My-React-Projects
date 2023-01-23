@@ -1,4 +1,5 @@
 import classes from './CV.module.css'
+import Nationality from './Nationality';
 
 export default function Profile(props){
   const {birthdate} = props;
@@ -11,8 +12,10 @@ export default function Profile(props){
   
   const age = calculateAge();
 
+  const nationality = <Nationality isEuropean={props.isEuropean} nationality={props.nationality} />
+
   return (
-    <>
+    <section>
     <h2 className={classes.title}>{props.name}</h2>
     <p className={classes.center}>
       <img className={classes.myPhoto} alt=""
@@ -22,7 +25,8 @@ export default function Profile(props){
       <i className='fas fa-map-marker-alt'>&nbsp;{props.address}</i> 
       <i className='fas fa-male'>&nbsp;{`${age} years old`}</i> 
       <i className='fas fa-suitcase'>&nbsp;{props.jobTitle}</i>
+      {nationality}
     </div>
-    </>
+    </section>
   );
 }

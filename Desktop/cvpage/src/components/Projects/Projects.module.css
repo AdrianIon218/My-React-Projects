@@ -11,7 +11,7 @@
   transition: box-shadow ease-in 0.4s;
 }
 
-.CardElement:hover > .category_container{
+.CardElement:hover > div > .category_container{
   box-shadow: rgba(0, 0, 0, 0.4) 0px -2px 4px, rgba(0, 0, 0, 0.3) 0px -3px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
@@ -19,16 +19,49 @@
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.category_container{
+.CardElement .tooltiptext {
+  visibility: hidden;
+  min-width: 7rem;
+  background-color: rgb(84, 82, 82);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
   position: absolute;
-  top: -10px;
-  left: -5px;
-  height: 2rem;
-  width: 2rem;
-  border-radius: 15%;
+  z-index: 1;
+  top: 30%;
+  left: 90%;
+  border: 1px black solid;
+  cursor:default;
+  opacity:0;
+  transition: opacity 0.9s;
+}
+
+.CardElement .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent black transparent transparent;
+}
+
+.CardElement:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.category_container{
+  height: 2em;
+  width: 2em;
+  border-radius: 14%;
   background-color: rgb(39, 170, 170);
   border: 1px rgb(15, 143, 143) solid;
-  transition: box-shadow ease-in 0.4s;
+  object-fit: fill;
+  object-position: right;
+  transition: box-shadow ease-in 0.5s;
 }
 
 div.category_container{
@@ -37,6 +70,17 @@ div.category_container{
   width: auto;
   background-color: rgb(57, 214, 214);
   border: 3px rgb(15, 143, 143) solid;
+  transition: box-shadow ease-in 0.5s;
+}
+
+.column_container{
+  position: absolute;
+  top: -12px;
+  left: -5px;
+  display:flex;
+  flex-direction: row;
+  width: auto;
+  column-gap: 0.4em;
 }
 
 .card{

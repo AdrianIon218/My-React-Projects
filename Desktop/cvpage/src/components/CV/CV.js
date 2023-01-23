@@ -1,24 +1,23 @@
-import Profile from './Profile'
-import Education from './Education'
 import {useContext} from 'react'
 import {UserContext} from '../Context/UserContext'
+import Profile from './Profile'
+import SkillList from './SkillList';
+import EducationList from './EducationList';
+import JobsList from './JobsList';
 
 export default function CV(){
   const userCtx = useContext(UserContext);
-  const {cvData, educationArr} = userCtx;
-
-  const educationElements = !educationArr ? null : [educationArr.map((item,index)=>{
-    return <Education key={index} {...item} />
-  })];
+  const {cvData, educationArr, skillsArr, jobsArr} = userCtx;
 
   return (
-    <>
     <section>
       {cvData && <Profile {...cvData} />}
+
+      {educationArr && <EducationList educationArr={educationArr} />}
+
+      {skillsArr && <SkillList skillsArr={skillsArr} />}
+
+      {jobsArr && <JobsList jobsArr={jobsArr} />}    
     </section>
-    <section>
-      {educationArr && educationElements}
-    </section>
-    </>
   );
 }

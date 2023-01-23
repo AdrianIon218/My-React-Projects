@@ -7,7 +7,7 @@
   color: rgb(19, 168, 168);
   font-size: 24px;
   padding: 4px;
-  border:4px rgb(19, 168, 168) double;
+  border:4px rgb(19, 168, 168) solid;
   border-radius: 5px;
   animation: fade-out 1.7s ease-in 1.8s 1 normal forwards;
 }

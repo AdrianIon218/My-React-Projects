@@ -1,4 +1,3 @@
-
 const categoryPhotos = [
   {
     Name: 'Javascript',
@@ -6,7 +5,20 @@ const categoryPhotos = [
   },
   {
     Name: 'React',
-    Photo: 'react-logo.png'
-  }]
+    Photo: 'react-Project.png'
+  },
+  {
+    Name: 'Typescript',
+    Photo: 'typescript-logo.png'
+  },
+  {
+    Name: 'NodeJs',
+    Photo: 'node-js.png'
+  },
+  {
+    Name: 'Sass',
+    Photo: 'sass.png'
+  }
+];
 
 export default categoryPhotos;
