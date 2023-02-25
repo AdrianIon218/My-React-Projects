@@ -1,23 +1,24 @@
 {
   "files": {
     "main.css": "/My-React-Projects/static/css/main.38337971.css",
-    "main.js": "/My-React-Projects/static/js/main.64566aa0.js",
+    "main.js": "/My-React-Projects/static/js/main.d54a1aac.js",
     "static/media/poza.png": "/My-React-Projects/static/media/poza.7ff956af673a4bc580d6.png",
     "static/media/contact-icon.png": "/My-React-Projects/static/media/contact-icon.844dfe402e0d8a25542d.png",
     "static/media/minigames.png": "/My-React-Projects/static/media/minigames.53ce3483b63cea58f4d9.png",
     "static/media/react-logo.png": "/My-React-Projects/static/media/react-logo.a35160f0e95886ce52aa.png",
     "static/media/react-Project.png": "/My-React-Projects/static/media/react-Project.20b409f3af7b264ff0bd.png",
     "static/media/note-logo.png": "/My-React-Projects/static/media/note-logo.da2b817f2ea5521bbcec.png",
+    "static/media/Angular.png": "/My-React-Projects/static/media/Angular.131450579b0239b68f29.png",
     "static/media/linkedin.png": "/My-React-Projects/static/media/linkedin.ff8be19b460643f9d162.png",
     "static/media/cv_cartoon.png": "/My-React-Projects/static/media/cv_cartoon.683b6d1984fb1d4cad14.png",
     "static/media/node-js.png": "/My-React-Projects/static/media/node-js.0140c14306a2a919fc0d.png",
     "static/media/GermanMax.png": "/My-React-Projects/static/media/GermanMax.8b4e4ddf3204b2f9790c.png",
     "index.html": "/My-React-Projects/index.html",
     "main.38337971.css.map": "/My-React-Projects/static/css/main.38337971.css.map",
-    "main.64566aa0.js.map": "/My-React-Projects/static/js/main.64566aa0.js.map"
+    "main.d54a1aac.js.map": "/My-React-Projects/static/js/main.d54a1aac.js.map"
   },
   "entrypoints": [
     "static/css/main.38337971.css",
-    "static/js/main.64566aa0.js"
+    "static/js/main.d54a1aac.js"
   ]
 }
