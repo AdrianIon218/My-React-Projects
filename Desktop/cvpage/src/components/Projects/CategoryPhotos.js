@@ -18,6 +18,10 @@ const categoryPhotos = [
   {
     Name: 'Sass',
     Photo: 'sass.png'
+  },
+  {
+    Name: 'Angular',
+    Photo: 'Angular.png'
   }
 ];
 
