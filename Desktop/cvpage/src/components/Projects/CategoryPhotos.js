@@ -12,7 +12,7 @@ const categoryPhotos = [
     Photo: 'typescript-logo.png'
   },
   {
-    Name: 'NodeJs',
+    Name: 'Node',
     Photo: 'node-js.png'
   },
   {
