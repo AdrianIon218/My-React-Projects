@@ -22,6 +22,10 @@ const categoryPhotos = [
   {
     Name: 'Angular',
     Photo: 'Angular.png'
+  },
+  {
+    Name: 'Vue',
+    Photo: 'vue_js.jpg'
   }
 ];
 
