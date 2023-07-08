@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/My-React-Projects/static/css/main.b4239387.css",
-    "main.js": "/My-React-Projects/static/js/main.ab916d84.js",
-    "static/media/contact-icon.png": "/My-React-Projects/static/media/contact-icon.844dfe402e0d8a25542d.png",
-    "static/media/minigames.png": "/My-React-Projects/static/media/minigames.53ce3483b63cea58f4d9.png",
-    "static/media/react-logo.png": "/My-React-Projects/static/media/react-logo.a35160f0e95886ce52aa.png",
-    "static/media/react-Project.png": "/My-React-Projects/static/media/react-Project.20b409f3af7b264ff0bd.png",
+    "main.js": "/My-React-Projects/static/js/main.deac4398.js",
     "static/media/poza.png": "/My-React-Projects/static/media/poza.9a59c25365923f7e81f7.png",
-    "static/media/note-logo.png": "/My-React-Projects/static/media/note-logo.da2b817f2ea5521bbcec.png",
-    "static/media/Angular.png": "/My-React-Projects/static/media/Angular.131450579b0239b68f29.png",
-    "static/media/linkedin.png": "/My-React-Projects/static/media/linkedin.ff8be19b460643f9d162.png",
+    "static/media/react-Project.png": "/My-React-Projects/static/media/react-Project.177710a16269e059fc9a.png",
+    "static/media/react-logo.png": "/My-React-Projects/static/media/react-logo.9c512454e41d395a06ae.png",
+    "static/media/minigames.png": "/My-React-Projects/static/media/minigames.101fe5a40b76a48135b4.png",
     "static/media/vue_js.jpg": "/My-React-Projects/static/media/vue_js.dbeb35aedf08be0a5a33.jpg",
     "static/media/cv_cartoon.png": "/My-React-Projects/static/media/cv_cartoon.683b6d1984fb1d4cad14.png",
     "static/media/node-js.png": "/My-React-Projects/static/media/node-js.0140c14306a2a919fc0d.png",
+    "static/media/contact-icon.png": "/My-React-Projects/static/media/contact-icon.4de7cde35dbe27acc3eb.png",
+    "static/media/note-logo.png": "/My-React-Projects/static/media/note-logo.7e4b0161386ad11e42a1.png",
+    "static/media/Angular.png": "/My-React-Projects/static/media/Angular.03f171bd2b895cc636fb.png",
     "static/media/firebase.jpg": "/My-React-Projects/static/media/firebase.e7e0ef005f445039db83.jpg",
+    "static/media/linkedin.png": "/My-React-Projects/static/media/linkedin.1aab46a46e21cd0efb2a.png",
     "static/media/GermanMax.png": "/My-React-Projects/static/media/GermanMax.8b4e4ddf3204b2f9790c.png",
     "index.html": "/My-React-Projects/index.html",
     "main.b4239387.css.map": "/My-React-Projects/static/css/main.b4239387.css.map",
-    "main.ab916d84.js.map": "/My-React-Projects/static/js/main.ab916d84.js.map"
+    "main.deac4398.js.map": "/My-React-Projects/static/js/main.deac4398.js.map"
   },
   "entrypoints": [
     "static/css/main.b4239387.css",
-    "static/js/main.ab916d84.js"
+    "static/js/main.deac4398.js"
   ]
 }
