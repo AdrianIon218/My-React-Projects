@@ -22,9 +22,6 @@
   align-items: center;
 }
 
-.formMessage {
-}
-
 .noBulletList {
   list-style-type: none;
   padding-left: 7px;
@@ -32,19 +29,19 @@
 
 .noBulletList li button {
   background-color: rgb(65, 212, 212);
-  border: 3px rgb(18, 157, 157) solid;
-  color: rgb(18, 157, 157);
+  border: 3px rgb(8, 122, 122) solid;
+  color: rgb(8, 122, 122);
   font-weight: 900;
   border-radius: 5px;
   font-size: 16px;
   margin-left: 10px;
   width: 20%;
-  transition: border-width ease-in-out 0.2s;
+  transition: border-style ease-in-out 0.4s;
   cursor: pointer;
 }
 
 .noBulletList li button:hover {
-  border-width: 4px;
+  border-style: dashed;
 }
 
 .noBulletList li {
@@ -54,7 +51,7 @@
 .noBulletList li input {
   margin-left: 7px;
   border-radius: 5px;
-  border: 4px rgb(19, 168, 168) solid;
+  border: 3px rgb(20, 140, 140) solid;
   height: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: rgb(19, 168, 168);
@@ -66,7 +63,7 @@
 .noBulletList li textarea {
   margin-left: 4px;
   border-radius: 10px;
-  border: 4px rgb(19, 168, 168) solid;
+  border: 3px rgb(20, 140, 140) solid;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   color: rgb(19, 168, 168);
   font-weight: 700;

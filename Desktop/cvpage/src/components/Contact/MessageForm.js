@@ -30,7 +30,7 @@ export default function MessageForm(props){
   return (
     <section>
       <h2>Write a message ?</h2>
-      <form className={classes.formMessage} onSubmit={submitHandler}>
+      <form onSubmit={submitHandler}>
       <ul className={classes.noBulletList}>
         <li>
           <label htmlFor='name'>Name <span className={classes.redSpan}>*</span> </label>
