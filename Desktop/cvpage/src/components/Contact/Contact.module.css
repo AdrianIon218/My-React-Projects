@@ -35,7 +35,6 @@
   border-radius: 5px;
   font-size: 16px;
   margin-left: 10px;
-  width: 20%;
   transition: border-style ease-in-out 0.4s;
   cursor: pointer;
 }

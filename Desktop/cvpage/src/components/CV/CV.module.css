@@ -64,3 +64,9 @@
   margin: 5px;
   text-align:justify;
 }
+
+@media all and (max-width:450px) {
+  .description{
+    text-align: left;
+  }
+}
