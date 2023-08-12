@@ -3,6 +3,7 @@ import classes from './Projects.module.css'
 import {useContext} from 'react'
 import {UserContext} from '../Context/UserContext'
 
+
 export default function Projects(){
   const userCtx = useContext(UserContext);
   let projects = [];
@@ -19,6 +20,7 @@ export default function Projects(){
         category={project.category}
         categories={project.categories}
         description={project.description}
+        presentation={project?.presentation}
         >
       {project.title}
       </Card>);

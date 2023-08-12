@@ -1,16 +1,28 @@
-import classes from './Projects.module.css'
-import categoryPhotos from './CategoryPhotos'
+import classes from './Projects.module.css';
+import categoryPhotos from './CategoryPhotos';
+import ProjectPanel from './ProjectPanel';
+import { useState } from 'react';
 
 export default function Card(props){
+  const [isProjectPanelShown, setProjectPanel] = useState(false);
 
-  function openPage(){
-    window.open(props.link, '_blank');
-  } 
+  function onCardClick(){
+    if(props.presentation){
+      setProjectPanel(true);
+    }
+    else{
+      window.open(props.link, '_blank');
+    }
+  }
+
+  function onClosePanel(){
+    setProjectPanel(false);
+  }
 
   const categories = Object.keys(props.categories)
-            .map((key,index)  => {
+            .map((key, index) => {
               const categoryName = props.categories[key];
-              const category = categoryPhotos.filter(category=>category.Name === categoryName);
+              const category = categoryPhotos.filter(category => category.Name === categoryName);
               return category.length > 0 ?
                 (<img key={index} alt={category[0].Name} className={classes.category_container}
                       src={require(`../../images/${category[0].Photo}`)}  />) :
@@ -19,8 +31,9 @@ export default function Card(props){
 
   const tooltiptext = props.description;
 
-  return (
-    <div className={classes.CardElement} onClick={openPage}>
+  return (<>
+    {isProjectPanelShown && <ProjectPanel onClosePanel={onClosePanel} />}
+    <div className={classes.CardElement} onClick={onCardClick}>
       <div className={classes.column_container}>
       {categories}
       </div>
@@ -30,5 +43,6 @@ export default function Card(props){
       </div>
       <span className={classes.tooltiptext} onClick={(event)=>{event.stopPropagation();}}>{tooltiptext}</span>
     </div>
-  );
+
+  </>);
 }
