@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My-React-Projects/static/css/main.2c7d4e58.css",
-    "main.js": "/My-React-Projects/static/js/main.c1780b2b.js",
+    "main.css": "/My-React-Projects/static/css/main.e929d020.css",
+    "main.js": "/My-React-Projects/static/js/main.77b8e923.js",
     "static/media/poza.png": "/My-React-Projects/static/media/poza.9a59c25365923f7e81f7.png",
     "static/media/react-Project.png": "/My-React-Projects/static/media/react-Project.177710a16269e059fc9a.png",
     "static/media/react-logo.png": "/My-React-Projects/static/media/react-logo.9c512454e41d395a06ae.png",
@@ -16,11 +16,11 @@
     "static/media/linkedin.png": "/My-React-Projects/static/media/linkedin.1aab46a46e21cd0efb2a.png",
     "static/media/GermanMax.png": "/My-React-Projects/static/media/GermanMax.8b4e4ddf3204b2f9790c.png",
     "index.html": "/My-React-Projects/index.html",
-    "main.2c7d4e58.css.map": "/My-React-Projects/static/css/main.2c7d4e58.css.map",
-    "main.c1780b2b.js.map": "/My-React-Projects/static/js/main.c1780b2b.js.map"
+    "main.e929d020.css.map": "/My-React-Projects/static/css/main.e929d020.css.map",
+    "main.77b8e923.js.map": "/My-React-Projects/static/js/main.77b8e923.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c7d4e58.css",
-    "static/js/main.c1780b2b.js"
+    "static/css/main.e929d020.css",
+    "static/js/main.77b8e923.js"
   ]
 }
