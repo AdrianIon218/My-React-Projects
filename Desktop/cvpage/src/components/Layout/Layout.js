@@ -8,7 +8,7 @@ export default function Layout(props){
   <>
     <NavComp /> 
     <Content>
-    {props.children}
+      {props.children}
     </Content>
     <Footer/>
   </>);

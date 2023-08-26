@@ -198,7 +198,6 @@ body:has(.backdrop){
   -webkit-text-stroke: .5px rgb(192, 1, 1);
 }
 
-
 .project_presentation{
   box-sizing: border-box;
   width: 100%;

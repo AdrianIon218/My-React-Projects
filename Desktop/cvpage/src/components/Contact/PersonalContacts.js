@@ -1,6 +1,7 @@
 import classes from './Contact.module.css'
 import PhoneNumber from './PhoneNumber'
 import Email from './Email'
+import LinkContact from './LinkContact'
 import React from 'react'
 import {useContext} from 'react'
 import {UserContext} from '../Context/UserContext'
@@ -9,7 +10,7 @@ export default function PersonalContacts(){
   const userCtx = useContext(UserContext);
   const contacts = userCtx.contactArr ? [...userCtx.contactArr] : [];
 
-  const contactsElements = contacts.map((contact)=>{
+  const contactsElements = contacts.map((contact, index)=>{
     switch(contact.type){
       case 'email':
         return <Email key={contact.address}>{contact.address}</Email>
@@ -19,6 +20,8 @@ export default function PersonalContacts(){
         {contact.number}
         </PhoneNumber>
         );
+      case 'link':
+        return <LinkContact key={index} href={contact.href} name={contact.name} />
       default:
         return null;
     }
@@ -29,6 +32,6 @@ export default function PersonalContacts(){
     <div className={classes.personalContact}>
       {contactsElements}
     </div>
-  </React.Fragment>  
+  </React.Fragment>
   );
 }
