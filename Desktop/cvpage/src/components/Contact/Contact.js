@@ -7,6 +7,7 @@ export default function Contact(){
   const [isSendMessageShown, setSendMessageShown] = useState(false); 
 
   function addNewMessage(MessageData){
+    setSendMessageShown(true);
     // https://console.firebase.google.com/u/0/project/cv-app-801f5/database/cv-app-801f5-default-rtdb/data/~2F
     fetch(
       'https://cv-app-801f5-default-rtdb.firebaseio.com/message.json',
@@ -17,9 +18,7 @@ export default function Contact(){
           'Content-Type':'application/json'
         }
       }
-    ).then(()=>{
-      setSendMessageShown(true);
-    })
+    )
   }
 
   function hideSendMessage(){

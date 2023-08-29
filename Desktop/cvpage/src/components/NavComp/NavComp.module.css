@@ -52,6 +52,7 @@ nav > ul > li{
 
 .nav_element.nav_selected:hover{
   text-shadow: none;
+  cursor: default;
 }
 
 .nav_selected{

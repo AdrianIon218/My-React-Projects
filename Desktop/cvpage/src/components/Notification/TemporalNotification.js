@@ -6,5 +6,6 @@ export default function TemporalNotification(props){
   }
 
   return (<div className={classes.notification} onAnimationEnd={hideNotification}>
-    {props.children}</div>);
+    {props.children}
+  </div>);
 }
