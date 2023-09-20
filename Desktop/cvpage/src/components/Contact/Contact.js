@@ -2,15 +2,14 @@ import MessageForm from './MessageForm'
 import PersonalContacts from './PersonalContacts';
 import TemporalNotification from '../Notification/TemporalNotification'
 import {useState} from 'react';
+import { FIREBASE_MESSAGE } from '../../PrivateData'; 
 
 export default function Contact(){
   const [isSendMessageShown, setSendMessageShown] = useState(false); 
 
   function addNewMessage(MessageData){
     setSendMessageShown(true);
-    // https://console.firebase.google.com/u/0/project/cv-app-801f5/database/cv-app-801f5-default-rtdb/data/~2F
-    fetch(
-      'https://cv-app-801f5-default-rtdb.firebaseio.com/message.json',
+    fetch( FIREBASE_MESSAGE,
       {
         method: 'POST',
         body:JSON.stringify(MessageData),

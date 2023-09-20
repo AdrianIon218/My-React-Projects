@@ -7,6 +7,7 @@ export default function Card(props){
   const [isProjectPanelShown, setProjectPanel] = useState(false);
 
   function onCardClick(){
+    setProjectPanel(true);
     if(props.presentation){
       setProjectPanel(true);
     }

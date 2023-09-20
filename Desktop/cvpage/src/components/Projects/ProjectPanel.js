@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import classes from './Projects.module.css'
+import classes from './Projects.module.css';
 
 function ProjectPanel(props) {
   const panelRef= useRef();
@@ -12,7 +12,7 @@ function ProjectPanel(props) {
   return (
     <div className={classes.backdrop}>
         <div className={classes.project_presentation} ref={panelRef}>
-           hei
+           
         </div>
         <button className={classes.exit_btn} onClick={closePresentation}>&times;</button>
     </div>

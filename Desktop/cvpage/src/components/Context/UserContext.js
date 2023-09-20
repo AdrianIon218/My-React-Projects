@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 import React from "react";
+import { PERSONAL_DATA } from "../../PrivateData";
 
 export const UserContext = createContext();
 
@@ -17,7 +18,7 @@ export function UserContextProvider(props){
   }
 
   React.useEffect(()=>{
-    fetch('https://cv-app-801f5-default-rtdb.firebaseio.com/user/-NF_N1OMDXThfHFuhOj8.json')
+    fetch(PERSONAL_DATA)
     .then(resData=>resData.json())
     .then(data =>{
       setUserData(data);

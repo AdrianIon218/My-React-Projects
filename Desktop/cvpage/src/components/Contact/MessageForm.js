@@ -12,13 +12,12 @@ export default function MessageForm(props){
     const enteredEmail = emailRef.current.value;
     const enteredMessage = messageRef.current.value;
     const date = new Date();
-    const currentDate = `${date.getDate()}.${date.getMonth()}.${date.getFullYear()}`;
 
     const messageData={
       name: enteredName,
       emial: enteredEmail,
       message: enteredMessage,
-      date: currentDate
+      date: date.toLocaleDateString()
     };
     
     nameRef.current.value='';
