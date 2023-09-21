@@ -59,7 +59,7 @@ nav > ul > li{
   text-decoration : underline 3px;
   text-decoration-style: dashed;
   text-underline-position: under;
-  text-underline-offset: 2px;
+  text-underline-offset: 3px;
 }
 
 @media only screen and (max-width: 600px) {
