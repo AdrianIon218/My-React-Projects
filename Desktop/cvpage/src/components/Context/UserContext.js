@@ -27,7 +27,8 @@ export function UserContextProvider(props){
 
   if(userData!==false){
     currentContext.cvData = { name: userData.name, photoProfile: userData.photoProfile,
-      address: userData.address, birthdate: userData.birthdate, jobTitle: userData.jobTitle , nationality: userData.nationality, isEuropean: userData.isEuropean };
+      address: userData.address, birthdate: userData.birthdate, jobTitle: userData.jobTitle ,
+      nationality: userData.nationality, isEuropean: userData.isEuropean };
 
     currentContext.footerData = { name: userData.name, linkedinLink: userData.linkedinLink};
 

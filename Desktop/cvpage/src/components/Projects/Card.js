@@ -7,7 +7,6 @@ export default function Card(props){
   const [isProjectPanelShown, setProjectPanel] = useState(false);
 
   function onCardClick(){
-    setProjectPanel(true);
     if(props.presentation){
       setProjectPanel(true);
     }
@@ -33,7 +32,7 @@ export default function Card(props){
   const tooltiptext = props.description;
 
   return (<>
-    {isProjectPanelShown && <ProjectPanel onClosePanel={onClosePanel} />}
+    {isProjectPanelShown && <ProjectPanel onClosePanel={onClosePanel} content={props.presentation} title={props.children} link={props.link} />}
     <div className={classes.CardElement} onClick={onCardClick}>
       <div className={classes.column_container}>
       {categories}
