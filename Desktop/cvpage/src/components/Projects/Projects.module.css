@@ -200,6 +200,12 @@ body:has(.backdrop){
   background-color: transparent;
   color:rgb(221, 12, 12);
   -webkit-text-stroke: .5px rgb(192, 1, 1);
+  transition: text-shadow .4s;
+}
+
+.project_presenation__exit:hover{
+  text-shadow: 0 0 5px rgb(192, 1, 1);
+  text-shadow: 1px 1px 2px black, 0 0 1em orange, 0 0 0.2em red;
 }
 
 .project_presentation{
