@@ -13,8 +13,6 @@ export default function Footer(props){
       <div>
         <p>{footerData.name}</p>
       </div>
-      <div>
-      </div>
       <div className={classes.socialMedia}>
         {footerData.linkedinLink && <ButtonIcon img={linkedinFoto} alt="linkedin" linkExternalPage={footerData.linkedinLink} />}
         <ButtonIcon img={contactFoto} alt="contact" linkInternalPage="Contact" />
