@@ -58,7 +58,7 @@
   border-color: transparent black transparent transparent;
 }
 
-@media only screen and (hover:hover) {
+@media only screen and (pointer: fine) {
   .CardElement:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
