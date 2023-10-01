@@ -5,6 +5,12 @@
   gap:20px;
 }
 
+@media only screen and (max-width:465px) {
+  .cards_container{
+    justify-content: center;
+  }
+}
+
 .CardElement{
   position: relative;
   cursor: pointer;
@@ -52,7 +58,7 @@
   border-color: transparent black transparent transparent;
 }
 
-@media  screen and (hover:hover) {
+@media only screen and (hover:hover) {
   .CardElement:hover .tooltiptext {
     visibility: visible;
     opacity: 1;

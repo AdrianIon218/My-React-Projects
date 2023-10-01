@@ -27,3 +27,6 @@ footer{
   justify-self: end;
 }
 
+.socialMedia > *{
+  margin-right: 2px;
+}
