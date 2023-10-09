@@ -217,6 +217,7 @@ body:has(.backdrop){
 }
 
 .project_presentation{
+  font-size: 1.1rem;
   grid-row: 2;
   grid-column: 1/-1;
   box-sizing: border-box;
@@ -231,6 +232,51 @@ body:has(.backdrop){
   display: flex;
   flex-direction: column;
   z-index: 301;
+}
+
+.project_presentation p{
+  text-indent: 1rem;
+  text-align: justify;
+  hyphens: auto;
+  font-weight: 400;
+}
+
+@media only screen and (min-width:420px){
+  .project_presentation p{
+    hyphens:none;
+  }
+}
+
+.presentation_link{
+  text-decoration: none;
+  color:inherit;
+  font-weight: 700;
+  display: flex;
+  transition: all .4s;
+  margin-left: 1rem;
+  margin-right: auto;
+  justify-items: center;
+}
+
+.icon_github{
+  display:inline-block;
+  height:100%;
+  width: 24px;
+  background-color:rgb(8, 122, 122);
+  -webkit-mask-image: url("../../../public/icon_github.svg");
+  mask-image: url("../../../public/icon_github.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+.presentation_link:hover{
+  text-shadow: 1px 0px 10px rgb(15, 153, 153);
+}
+
+.presentation_link:active{
+  transform: translateY(3px);
 }
 
 .current_page_indicator{
@@ -255,7 +301,7 @@ body:has(.backdrop){
   margin-bottom: 3rem;
   font-weight: 800;
   color: transparent;
-  background: linear-gradient(to right,rgb(12, 108, 108),rgb(43, 177, 177));
+  background: linear-gradient(to right bottom,rgb(12, 108, 108),rgb(43, 177, 177));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
