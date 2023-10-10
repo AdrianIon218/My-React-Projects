@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 import classes from './Projects.module.css';
-import { Link } from 'react-router-dom';
+import CustomedLink from './CustomedLink';
 
 function ProjectPanel(props) {
   const panelRef= useRef();
@@ -24,12 +24,10 @@ function ProjectPanel(props) {
            <h2>{props.title}</h2>
            {isThePortfolioPage && <button onClick={openCardLink} className={classes.btn_link}>Visit the website</button>}
            {description && <p> {description} </p>}
-           {github && <a href={github} 
-             className={classes.presentation_link} 
-             target="_blank" 
-             rel="noreferrer">
-              <div className={classes.icon_github} /> Github repository 
-            </a>}
+           {github && 
+            <CustomedLink link={github} svg={"github"}>
+              Github repository
+            </CustomedLink>}
         </div>
         <button className={classes.project_presenation__exit} onClick={closePresentation}>&times;</button>
       </div>

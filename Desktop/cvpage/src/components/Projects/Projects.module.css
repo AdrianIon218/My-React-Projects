@@ -258,13 +258,13 @@ body:has(.backdrop){
   justify-items: center;
 }
 
-.icon_github{
+.icon_link{
   display:inline-block;
   height:100%;
   width: 24px;
   background-color:rgb(8, 122, 122);
-  -webkit-mask-image: url("../../../public/icon_github.svg");
-  mask-image: url("../../../public/icon_github.svg");
+  -webkit-mask-image: var(--svg-url);
+  mask-image: var(--svg-url);
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: cover;
