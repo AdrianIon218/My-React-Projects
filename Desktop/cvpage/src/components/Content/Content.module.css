@@ -1,9 +1,9 @@
-main{
+main {
   display: grid;
   grid-template-columns: 100px 1fr 100px;
 }
 
-.content{
+.content {
   border-left: 5px rgb(19, 168, 168) dashed;
   border-right: 5px rgb(19, 168, 168) dashed;
   min-height: 80vh;
@@ -14,7 +14,7 @@ main{
 }
 
 @media only screen and (max-width: 600px) {
-  .main{
+  .main {
     grid-template-columns: 30px 1fr 30px;
   }
 }

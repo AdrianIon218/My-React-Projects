@@ -1,32 +1,40 @@
-.notification{
+.notification {
   position: fixed;
   top: 4vh;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgb(167, 235, 235);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow:
+    rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   color: rgb(6, 127, 127);
   font-size: 24px;
   padding: 4px;
-  border:4px solid;
+  border: 4px solid;
   border-radius: 5px;
   animation: fade-out 1.7s ease-in 1.8s 1 normal forwards;
 }
 
-@media all and (max-width:450px) {
-  .notification{
+@media all and (max-width: 450px) {
+  .notification {
     transform: translateX(-30%);
   }
 }
 
-@keyframes fade-out{
-  0%{opacity: 100%;}
-  30%{opacity: 100%;}
-  100%{opacity: 0%;}
+@keyframes fade-out {
+  0% {
+    opacity: 100%;
+  }
+  30% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
 }
 
 @media only screen and (max-width: 600px) {
-  .notification{
-    left:40%;
+  .notification {
+    left: 40%;
   }
 }

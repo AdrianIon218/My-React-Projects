@@ -1,34 +1,33 @@
-import Card from './Card';
-import classes from './Projects.module.css'
-import {useContext} from 'react'
-import {UserContext} from '../Context/UserContext'
+import Card from "./Card";
+import classes from "./Projects.module.css";
+import { useContext } from "react";
+import { UserContext } from "../Context/UserContext";
 
-
-export default function Projects(){
+export default function Projects() {
   const userCtx = useContext(UserContext);
   let projects = [];
 
-  if(userCtx.projectsArr){
+  if (userCtx.projectsArr) {
     projects = [...userCtx.projectsArr];
   }
 
-  const projectsElements = projects.map((project,index)=>{
+  const projectsElements = projects.map((project, index) => {
     return (
-      <Card key={index} 
-        photoName={project.photoName} 
-        link={project.link} 
+      <Card
+        key={index}
+        photoName={project.photoName}
+        link={project.link}
         category={project.category}
         categories={project.categories}
         description={project.description}
         presentation={project?.presentation}
-        >
-      {project.title}
-      </Card>);
-    });
+      >
+        {project.title}
+      </Card>
+    );
+  });
 
   return (
-    <section className={classes.cards_container}>
-      {projectsElements}
-    </section>
+    <section className={classes.cards_container}>{projectsElements}</section>
   );
 }

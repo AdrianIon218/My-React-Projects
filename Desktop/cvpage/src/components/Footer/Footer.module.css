@@ -1,5 +1,5 @@
-footer{
-  color:rgb(15, 137, 137);
+footer {
+  color: rgb(15, 137, 137);
   font-size: larger;
   font-weight: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -13,20 +13,20 @@ footer{
   border-top: 6px rgb(15, 137, 137) solid;
   border-top-left-radius: 8%;
   border-top-right-radius: 8%;
-  display:grid;
+  display: grid;
   grid-template-columns: 230px 1fr;
-  align-items:center;
-  gap:10px;
+  align-items: center;
+  gap: 10px;
 }
 
 .footer p {
   text-align: center;
 }
 
-.socialMedia{
+.socialMedia {
   justify-self: end;
 }
 
-.socialMedia > *{
+.socialMedia > * {
   margin-right: 2px;
 }

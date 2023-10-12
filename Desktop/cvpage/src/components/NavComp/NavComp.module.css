@@ -1,4 +1,4 @@
-nav{
+nav {
   display: flex;
   flex-wrap: nowrap;
   background-color: rgb(75, 74, 73);
@@ -14,7 +14,7 @@ nav{
   padding: 2px;
 }
 
-.logo{
+.logo {
   object-position: center;
   object-fit: fill;
   width: 58px;
@@ -22,21 +22,21 @@ nav{
   margin-right: auto;
 }
 
-nav > ul{
+nav > ul {
   flex: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-nav > ul > li{
+nav > ul > li {
   list-style: none;
   flex: 1;
   text-align: center;
   margin-right: 10px;
 }
 
-.nav_element{
+.nav_element {
   font-family: Lora, Roboto;
   font-size: 1.5em;
   color: rgb(19, 168, 168);
@@ -46,31 +46,31 @@ nav > ul > li{
   transition: text-shadow 0.2s ease-in-out;
 }
 
-.nav_element:hover{
+.nav_element:hover {
   text-shadow: 1px 0px 2px rgb(12, 244, 244);
 }
 
-.nav_element.nav_selected:hover{
+.nav_element.nav_selected:hover {
   text-shadow: none;
   cursor: default;
 }
 
-.nav_selected{
-  text-decoration : underline 3px;
+.nav_selected {
+  text-decoration: underline 3px;
   text-decoration-style: dashed;
   text-underline-position: under;
   text-underline-offset: 3px;
 }
 
 @media only screen and (max-width: 600px) {
-  .logo{
+  .logo {
     width: 50px;
-  } 
+  }
 }
 
 @media only screen and (max-width: 450px) {
-  nav > ul{
+  nav > ul {
     row-gap: 1rem;
     flex-direction: column;
-  } 
+  }
 }

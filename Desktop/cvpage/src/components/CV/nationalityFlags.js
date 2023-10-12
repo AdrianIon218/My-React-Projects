@@ -1,13 +1,12 @@
-
 const NationalFlags = [
   {
     Nationality: "Romanian",
-    FlagName: 'romanianFlag.png'
+    FlagName: "romanianFlag.png",
   },
   {
     Nationality: "Austrian",
-    FlagName: 'austrianFlag.png'
-  }
-]
+    FlagName: "austrianFlag.png",
+  },
+];
 
 export default NationalFlags;

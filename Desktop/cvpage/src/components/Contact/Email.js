@@ -1,6 +1,6 @@
-import classes from './Contact.module.css'
+import classes from "./Contact.module.css";
 
-export default function Email(props){
+export default function Email(props) {
   return (
     <div className={classes.divRowCentered}>
       <i className={`fa fa-envelope ${classes.icon}`} aria-hidden="true" />
