@@ -305,10 +305,6 @@ body:has(.backdrop) {
   transform: translateY(3px);
 }
 
-div:has(.presentation_link) {
-  margin-bottom: 1rem;
-}
-
 .current_page_indicator {
   grid-column: 1/2;
   grid-row: 1/2;
