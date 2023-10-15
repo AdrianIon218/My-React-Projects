@@ -289,8 +289,8 @@ body:has(.backdrop) {
   mask-repeat: no-repeat;
   -webkit-mask-size: 90%;
   mask-size: 90%;
-  -webkit-mask-position: center;
-  mask-position: center;
+  -webkit-mask-position: left center;
+  mask-position: left center;
 }
 
 .presentation_link:not(:first-child) {
@@ -356,6 +356,7 @@ body:has(.backdrop) {
   transition: color 0.6s;
   position: relative;
   z-index: 320;
+  margin-bottom: 3rem;
 }
 
 .project_presentation .btn_link:hover {
