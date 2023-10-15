@@ -276,6 +276,7 @@ body:has(.backdrop) {
   text-decoration: none;
   color: inherit;
   font-weight: inherit;
+  transition: all 0.4s;
 }
 
 .icon_link {
@@ -297,7 +298,7 @@ body:has(.backdrop) {
   margin-top: 0.5rem;
 }
 
-.presentation_link:hover {
+.presentation_link a:hover, .icon_link:hover ~ a{
   text-shadow: 1px 0px 10px rgb(15, 153, 153);
 }
 
