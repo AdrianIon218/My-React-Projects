@@ -1,8 +1,10 @@
 .cards_container {
   margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 22px;
 }
 
 @media only screen and (max-width: 465px) {
@@ -90,10 +92,10 @@ div.category_container {
   transition: box-shadow ease-in 0.5s;
 }
 
-.column_container {
+.row_container {
   position: absolute;
   top: -12px;
-  left: -5px;
+  left: -0.8em;
   display: flex;
   flex-direction: row;
   width: auto;
@@ -298,7 +300,8 @@ body:has(.backdrop) {
   margin-top: 0.5rem;
 }
 
-.presentation_link a:hover, .icon_link:hover ~ a{
+.presentation_link a:hover,
+.icon_link:hover ~ a {
   text-shadow: 1px 0px 10px rgb(15, 153, 153);
 }
 

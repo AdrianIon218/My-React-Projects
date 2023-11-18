@@ -20,9 +20,11 @@ export default function Card(props) {
 
   const categories = Object.keys(props.categories).map((key, index) => {
     const categoryName = props.categories[key];
+
     const category = categoryPhotos.filter(
       (category) => category.Name === categoryName,
     );
+
     return category.length > 0 ? (
       <img
         key={index}
@@ -50,7 +52,7 @@ export default function Card(props) {
         />
       )}
       <div className={classes.CardElement} onClick={onCardClick}>
-        <div className={classes.column_container}>{categories}</div>
+        <div className={classes.row_container}>{categories}</div>
         <div className={classes.card}>
           <img
             src={require(`../../images/${props.photoName}`)}
