@@ -35,6 +35,10 @@ const categoryPhotos = [
     Name: "Redux",
     Photo: "redux-icon.png",
   },
+  {
+    Name: "Supabase",
+    Photo: "supabse.jpg",
+  }
 ];
 
 export default categoryPhotos;
