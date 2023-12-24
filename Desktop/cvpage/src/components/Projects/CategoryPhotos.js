@@ -38,6 +38,10 @@ const categoryPhotos = [
   {
     Name: "Supabase",
     Photo: "supabse.jpg",
+  },
+  {
+    Name: "Query",
+    Photo: "react-query.png"
   }
 ];
 
