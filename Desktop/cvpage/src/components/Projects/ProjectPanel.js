@@ -4,7 +4,7 @@ import CustomedLink from "./CustomedLink";
 
 function ProjectPanel(props) {
   const panelRef = useRef();
-  const { description, problems, github, bitbucket } = props.content;
+  const { description, github, bitbucket } = props.content;
   const isThePortfolioPage = props.title !== "Portfolio";
 
   const closePresentation = (e) => {

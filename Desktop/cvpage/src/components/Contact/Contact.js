@@ -2,35 +2,27 @@ import MessageForm from "./MessageForm";
 import PersonalContacts from "./PersonalContacts";
 import TemporalNotification from "../Notification/TemporalNotification";
 import { useState } from "react";
-import { FIREBASE_MESSAGE } from "../../PrivateData";
 
 export default function Contact() {
-  const [isSendMessageShown, setSendMessageShown] = useState(false);
+  const [isMessageShown, setMessageShown] = useState(false);
 
-  function addNewMessage(MessageData) {
-    setSendMessageShown(true);
-    fetch(FIREBASE_MESSAGE, {
-      method: "POST",
-      body: JSON.stringify(MessageData),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+  function showNotification(){
+    setMessageShown(true);
   }
 
-  function hideSendMessage() {
-    setSendMessageShown(false);
+  function hideNotification() {
+    setMessageShown(false);
   }
 
   return (
     <>
-      {isSendMessageShown && (
-        <TemporalNotification hideMessage={hideSendMessage}>
+      {isMessageShown && (
+        <TemporalNotification hideNotification={hideNotification}>
           Message sent
         </TemporalNotification>
       )}
       <PersonalContacts />
-      <MessageForm addMessage={addNewMessage} />
+      <MessageForm showNotification={showNotification} isNotificationShown={isMessageShown} />
     </>
   );
 }

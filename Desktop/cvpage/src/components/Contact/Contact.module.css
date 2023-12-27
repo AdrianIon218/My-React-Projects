@@ -47,26 +47,33 @@
   padding-left: 7px;
 }
 
-.noBulletList li button {
+.submit-btn {
   background-color: rgb(65, 212, 212);
-  border: 3px rgb(8, 122, 122) solid;
+  border: 3px solid rgb(8, 122, 122) solid;
   color: rgb(8, 122, 122);
-  font-weight: 900;
-  border-radius: 5px;
-  font-size: 16px;
-  margin-left: 10px;
+  font-weight: 800;
+  border-radius: .5rem;
+  font-size: 1.2rem;
+  margin-left: 5px;
+  padding: .3rem .7rem;
   transition: all ease-in-out 0.4s;
   cursor: pointer;
   outline: none;
 }
 
-.noBulletList li button:hover, .noBulletList li button:focus {
+.submit-btn:hover, .submit-btn:focus, .submit-btn:disabled  {
   color: rgb(65, 212, 212);
   background-color: rgb(8, 122, 122);
 }
 
-.noBulletList li button:active {
+.submit-btn:active {
   transform: translateY(8px);
+}
+
+.submit-btn:disabled {
+  cursor: default;
+  transform: none;
+  opacity: .7;
 }
 
 .noBulletList li {

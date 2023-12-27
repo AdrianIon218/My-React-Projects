@@ -2,7 +2,7 @@ import classes from "./TemporalNotification.module.css";
 
 export default function TemporalNotification(props) {
   function hideNotification() {
-    props.hideMessage();
+    props.hideNotification();
   }
 
   return (

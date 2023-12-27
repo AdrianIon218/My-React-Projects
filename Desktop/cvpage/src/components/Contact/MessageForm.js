@@ -1,35 +1,33 @@
+import { useForm } from "react-hook-form";
 import classes from "./Contact.module.css";
-import { useRef } from "react";
+import { FIREBASE_MESSAGE } from "../../PrivateData";
 
 export default function MessageForm(props) {
-  const nameRef = useRef();
-  const emailRef = useRef();
-  const messageRef = useRef();
+  const {register, handleSubmit, reset} = useForm();
+  
+  function onSubmit(formData){
+    try{
+      const {name, email, message} = formData;
+      const currentDate = (new Date()).toLocaleDateString();
 
-  function submitHandler(event) {
-    event.preventDefault();
-    const enteredName = nameRef.current.value;
-    const enteredEmail = emailRef.current.value;
-    const enteredMessage = messageRef.current.value;
-    const date = new Date();
-
-    const messageData = {
-      name: enteredName,
-      emial: enteredEmail,
-      message: enteredMessage,
-      date: date.toLocaleDateString(),
-    };
-
-    nameRef.current.value = "";
-    emailRef.current.value = "";
-    messageRef.current.value = "";
-    props.addMessage(messageData);
+      fetch(FIREBASE_MESSAGE, {
+        method: "POST",
+        body: JSON.stringify({name, email, message, date:currentDate}),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      props.showNotification();
+      reset();
+    }catch(err){
+      console.error(err);
+    }
   }
 
   return (
     <section>
       <h2>Write a message ?</h2>
-      <form onSubmit={submitHandler}>
+      <form onSubmit={handleSubmit(onSubmit)}>
         <ul className={classes.noBulletList}>
           <li>
             <label htmlFor="name">
@@ -39,8 +37,9 @@ export default function MessageForm(props) {
               id="name"
               type="text"
               placeholder="ex: Andrew"
-              ref={nameRef}
               required
+              disabled={props.isNotificationShown}
+              {...register("name")}
             />
           </li>
           <li>
@@ -51,19 +50,22 @@ export default function MessageForm(props) {
               id="email"
               type="email"
               placeholder="ex: name@yahoo.com"
-              ref={emailRef}
               required
+              disabled={props.isNotificationShown}
+              {...register("email")}
             />
           </li>
           <li>
             <textarea
               rows="10"
               placeholder="Message ..."
-              ref={messageRef}
+              required
+              disabled={props.isNotificationShown}
+              {...register("message")}
             ></textarea>
           </li>
           <li>
-            <button>Send</button>
+            <button className={classes["submit-btn"]} disabled={props.isNotificationShown}>Send</button>
           </li>
         </ul>
       </form>
