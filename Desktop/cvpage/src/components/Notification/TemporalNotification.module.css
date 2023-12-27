@@ -16,8 +16,8 @@
   border-radius: 1rem;
   display: flex;
   align-items: center;
-  justify-content: center;
-  animation: fade-out 2s ease-in 2s 1 normal forwards;
+  text-align: center;
+  animation: fade-out 2s ease-in 200s 1 normal forwards;
 }
 
 @media all and (max-width: 450px) {
