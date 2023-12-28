@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/My-React-Projects/static/css/main.dc79038d.css",
-    "main.js": "/My-React-Projects/static/js/main.c0a4a625.js",
+    "main.js": "/My-React-Projects/static/js/main.7943e626.js",
     "static/css/229.32112427.chunk.css": "/My-React-Projects/static/css/229.32112427.chunk.css",
     "static/js/229.f72f1409.chunk.js": "/My-React-Projects/static/js/229.f72f1409.chunk.js",
-    "static/css/159.7de7f20d.chunk.css": "/My-React-Projects/static/css/159.7de7f20d.chunk.css",
+    "static/css/159.15750195.chunk.css": "/My-React-Projects/static/css/159.15750195.chunk.css",
     "static/js/159.8eb72dfe.chunk.js": "/My-React-Projects/static/js/159.8eb72dfe.chunk.js",
     "static/css/530.ae3d084d.chunk.css": "/My-React-Projects/static/css/530.ae3d084d.chunk.css",
     "static/js/530.e298609c.chunk.js": "/My-React-Projects/static/js/530.e298609c.chunk.js",
@@ -31,10 +31,10 @@
     "static/media/icon_bitbucket.svg": "/My-React-Projects/static/media/icon_bitbucket.dd613b9566dfb1a81524998b64cae760.svg",
     "static/media/icon_github.svg": "/My-React-Projects/static/media/icon_github.7aa9e9140e14d9692b592cdefac167ad.svg",
     "main.dc79038d.css.map": "/My-React-Projects/static/css/main.dc79038d.css.map",
-    "main.c0a4a625.js.map": "/My-React-Projects/static/js/main.c0a4a625.js.map",
+    "main.7943e626.js.map": "/My-React-Projects/static/js/main.7943e626.js.map",
     "229.32112427.chunk.css.map": "/My-React-Projects/static/css/229.32112427.chunk.css.map",
     "229.f72f1409.chunk.js.map": "/My-React-Projects/static/js/229.f72f1409.chunk.js.map",
-    "159.7de7f20d.chunk.css.map": "/My-React-Projects/static/css/159.7de7f20d.chunk.css.map",
+    "159.15750195.chunk.css.map": "/My-React-Projects/static/css/159.15750195.chunk.css.map",
     "159.8eb72dfe.chunk.js.map": "/My-React-Projects/static/js/159.8eb72dfe.chunk.js.map",
     "530.ae3d084d.chunk.css.map": "/My-React-Projects/static/css/530.ae3d084d.chunk.css.map",
     "530.e298609c.chunk.js.map": "/My-React-Projects/static/js/530.e298609c.chunk.js.map",
@@ -45,6 +45,6 @@
   },
   "entrypoints": [
     "static/css/main.dc79038d.css",
-    "static/js/main.c0a4a625.js"
+    "static/js/main.7943e626.js"
   ]
 }
