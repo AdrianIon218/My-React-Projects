@@ -17,7 +17,7 @@
   display: flex;
   align-items: center;
   text-align: center;
-  animation: fade-out 2s ease-in 200s 1 normal forwards;
+  animation: fade-out 2s ease-in 2s 1 normal forwards;
 }
 
 @media all and (max-width: 450px) {
