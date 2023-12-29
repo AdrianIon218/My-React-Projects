@@ -237,16 +237,34 @@ body:has(.backdrop) {
   grid-column: 1/-1;
   box-sizing: border-box;
   width: 100%;
-  height: 100%;
+  height: 80vh;
   background-color: rgba(255, 247, 247, 0.81);
   border-radius: 0.5rem;
   border: 6px double rgb(8, 122, 122);
   overflow-y: auto;
   overflow-x: hidden;
   padding: 1rem;
+  padding-bottom: 3rem;
   display: flex;
   flex-direction: column;
   z-index: 301;
+}
+
+/* width */
+.project_presentation::-webkit-scrollbar {
+  width: .6rem;
+}
+
+/* Track */
+.project_presentation::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 1rem;
+}
+
+/* Handle */
+.project_presentation::-webkit-scrollbar-thumb {
+  background: rgb(12, 108, 108);
+  border-radius: 1rem;
 }
 
 .project_presentation p {
@@ -328,7 +346,7 @@ body:has(.backdrop) {
 
 .project_presentation > h2 {
   align-self: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   font-weight: 800;
   color: transparent;
   background: linear-gradient(
