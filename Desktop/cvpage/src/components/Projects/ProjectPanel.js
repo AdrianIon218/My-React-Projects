@@ -4,8 +4,9 @@ import CustomedLink from "./CustomedLink";
 
 function ProjectPanel(props) {
   const panelRef = useRef();
-  const { description, github, bitbucket } = props.content;
-  const isThePortfolioPage = props.title !== "Portfolio";
+  const {description, github, bitbucket } = props.content;
+  const isNotThePortfolioPage = props.title !== "Portfolio";
+  const paragraphsDescription = Object.entries(description).map((item,index)=>(<p key={item[0]}>{item[1]}</p>));
 
   const closePresentation = (e) => {
     panelRef.current.classList.add(classes.close_panel);
@@ -19,7 +20,7 @@ function ProjectPanel(props) {
   return (
     <div className={classes.backdrop} onClick={closePresentation}>
       <div className={classes.project_presenation__container} ref={panelRef}>
-        {!isThePortfolioPage && (
+        {!isNotThePortfolioPage && (
           <div className={classes.current_page_indicator}>
             {" "}
             The current page
@@ -30,12 +31,12 @@ function ProjectPanel(props) {
           onClick={(e) => e.stopPropagation()}
         >
           <h2>{props.title}</h2>
-          {isThePortfolioPage && (
+          {isNotThePortfolioPage && (
             <button onClick={openCardLink} className={classes.btn_link}>
               Visit the website
             </button>
           )}
-          {description && <p> {description} </p>}
+          {paragraphsDescription.length > 0 && paragraphsDescription}
           <div>
             {github && (
               <CustomedLink link={github.link} svg={"github"}>

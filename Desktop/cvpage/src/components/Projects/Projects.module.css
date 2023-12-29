@@ -244,6 +244,7 @@ body:has(.backdrop) {
   overflow-y: auto;
   overflow-x: hidden;
   padding: 1rem;
+  padding-top: 2rem;
   padding-bottom: 3rem;
   display: flex;
   flex-direction: column;
@@ -271,7 +272,12 @@ body:has(.backdrop) {
   text-indent: 1rem;
   text-align: justify;
   hyphens: auto;
+  margin: 0px;
   font-weight: 400;
+}
+
+.project_presentation p:last-of-type {
+  margin-bottom: 2rem;
 }
 
 @media only screen and (min-width: 420px) {
