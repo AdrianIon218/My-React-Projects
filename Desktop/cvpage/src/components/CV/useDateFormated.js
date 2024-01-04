@@ -1,7 +1,7 @@
 const useDateFormated = (date) => {
   if (!date) return null;
 
-  if (date === "prezent") return "prezent";
+  if (date === "present") return "present";
 
   const actualDate = new Date(date);
   const monthName = [
