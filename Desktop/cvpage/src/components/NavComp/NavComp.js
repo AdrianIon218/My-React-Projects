@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo } from "react";
 import classes from "./NavComp.module.css";
-import logo from "../../images/react-logo.png";
+import logo from "../../images/react_logo.png";
 import { Link, useLocation } from "react-router-dom";
 import { useContext } from "react";
 import { NavContext } from "../Context/NavContext";

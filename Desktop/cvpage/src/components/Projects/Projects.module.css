@@ -4,7 +4,7 @@
   margin-right: 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 22px;
+  gap: 2rem;
 }
 
 @media only screen and (max-width: 465px) {
@@ -99,7 +99,7 @@ div.category_container {
   display: flex;
   flex-direction: row;
   width: auto;
-  column-gap: 0.4em;
+  column-gap: 0.3em;
 }
 
 .card {
@@ -253,7 +253,7 @@ body:has(.backdrop) {
 
 /* width */
 .project_presentation::-webkit-scrollbar {
-  width: .6rem;
+  width: 0.6rem;
 }
 
 /* Track */

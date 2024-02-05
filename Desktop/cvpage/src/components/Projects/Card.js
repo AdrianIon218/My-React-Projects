@@ -22,7 +22,7 @@ export default function Card(props) {
     const categoryName = props.categories[key];
 
     const category = categoryPhotos.filter(
-      (category) => category.Name === categoryName,
+      (category) => category.Name.toLowerCase() === categoryName.toLowerCase()
     );
 
     return category.length > 0 ? (

@@ -1,19 +1,19 @@
 const categoryPhotos = [
   {
     Name: "Javascript",
-    Photo: "JavaScript-logo.png",
+    Photo: "javascript.png",
   },
   {
-    Name: "React",
-    Photo: "react-Project.png",
+    Name: "react",
+    Photo: "react_project.png",
   },
   {
     Name: "Typescript",
-    Photo: "typescript-logo.png",
+    Photo: "typescript.png",
   },
   {
     Name: "Node",
-    Photo: "node-js.png",
+    Photo: "nodejs.png",
   },
   {
     Name: "Sass",
@@ -21,19 +21,19 @@ const categoryPhotos = [
   },
   {
     Name: "Angular",
-    Photo: "Angular.png",
+    Photo: "angular.png",
   },
   {
     Name: "Vue",
-    Photo: "vue_js.jpg",
+    Photo: "vuejs.jpg",
   },
   {
     Name: "Firebase",
     Photo: "firebase.jpg",
   },
   {
-    Name: "Redux",
-    Photo: "redux-icon.png",
+    Name: "redux",
+    Photo: "redux_icon.png",
   },
   {
     Name: "Supabase",
@@ -41,8 +41,12 @@ const categoryPhotos = [
   },
   {
     Name: "Query",
-    Photo: "react-query.png"
-  }
+    Photo: "react_query.png",
+  },
+  {
+    Name: "react native",
+    Photo: "react_native.png",
+  },
 ];
 
 export default categoryPhotos;
