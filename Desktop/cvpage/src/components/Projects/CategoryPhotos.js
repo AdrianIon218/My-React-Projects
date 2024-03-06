@@ -24,6 +24,10 @@ const categoryPhotos = [
     Photo: "angular.png",
   },
   {
+    Name: "CSS modules",
+    Photo: "css_modules.png",
+  },
+  {
     Name: "Vue",
     Photo: "vuejs.jpg",
   },
